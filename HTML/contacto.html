@@ -16,10 +16,57 @@
     <main>
         <h2>Formulario de Contacto</h2>
 
-        <h4>Dejame un mensaje y a la brevedad te esaré respondiendo.</h4>
+        <h4>Dejame un mensaje y a la brevedad te estaré respondiendo.</h4>
 
         <form action="">
-            <input type="text">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input name="nombre" type="text">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" name="email">
+            </div>
+
+            <br>
+            
+            <div>
+                <label for="genero">Genero</label>
+                <select name="genero">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="x">X</option>
+                    <option value="ne" default>No Especificar</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mensaje">Mensaje</label>
+            </div>
+            <textarea name="mensaje" cols="30" rows="5"></textarea>
+
+            <div>
+                <button>ENVIAR</button>
+            </div>
         </form>
     </main>
 
